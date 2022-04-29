@@ -1,9 +1,9 @@
-const express = require('express');
-const app = express();
+const express = require("express");
+const app = express()
 app.use(express.json());
-require('./connection/database');
+require("./connection/database");
 
-const customerRouter = require("./router/customerRouter");
-app.use (sustomerRouter);
+const customerRouter = require("./router/customer_router");
+app.use(customerRouter);
 
-app.listen(90);
+app.listen(90)
